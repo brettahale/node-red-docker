@@ -1,5 +1,7 @@
 FROM node:6-alpine
 
+RUN apk add --update git
+
 # Home directory for Node-RED application source code.
 RUN mkdir -p /usr/src/node-red
 
@@ -17,8 +19,8 @@ USER node-red
 
 # package.json contains Node-RED NPM module and node dependencies
 COPY package.json /usr/src/node-red/
+RUN ls -la /
 RUN npm install
-
 # User configuration directory volume
 EXPOSE 1880
 

@@ -1,5 +1,7 @@
 # Node-RED-Docker
 
+docker tag [IMAGE] [HOSTNAME]/[PROJECT-ID]/[IMAGE][:TAG]
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/node-red/node-red-docker.svg)](https://greenkeeper.io/)
 
 This project describes some of the many ways Node-RED can be run under Docker.

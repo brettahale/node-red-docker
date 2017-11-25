@@ -2,7 +2,7 @@ FROM hypriot/rpi-node:6
 
 # add support for gpio library
 RUN apt-get update
-RUN apt-get install python-rpi.gpio
+RUN apt-get install python-rpi.gpio git
 
 # Home directory for Node-RED application source code.
 RUN mkdir -p /usr/src/node-red
